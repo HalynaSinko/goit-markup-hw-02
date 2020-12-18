@@ -1,21 +1,15 @@
 :root {
-  --thin-font-weight: 400;
-  --normal-font-weight: 500;
+  --normal-font-weight: 400;
+  --average-font-weight: 500;
   --bolt-font-weight: 700;
   --hero-title-font-weight: 900;
-
-  --main-font-size: 14px;
-  --secondary-font-size: 16px;
-  --caption-portfolio-font-size: 18px;
-  --section-title-font-size: 36px;
-  --hero-title-font-size: 44px;
 
   --main-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --dark-background-color: #2f303a;
 
-  --main-color: #757575;
-  --secondary-color: #212121;
+  --main-color: #212121;
+  --secondary-color: #757575;
   --dark-main-color: #ffffff;
   --dark-secondary-color: rgba(255, 255, 255, 0.6);
 
@@ -26,9 +20,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: var(--normal-font-weight);
-  font-size: var(--main-font-size);
+  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 
   background-color: var(--main-background-color);
   color: var(--main-color);
@@ -52,7 +46,6 @@ ul {
   font-weight: var(--bolt-font-weight);
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .start-logo {
@@ -63,8 +56,13 @@ ul {
   color: #000000;
 }
 
+.nav-link,
+.header-contact {
+  font-weight: var(--average-font-weight);
+  letter-spacing: 0.02em;
+}
 .nav-link {
-  color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 .nav-link:hover,
@@ -77,7 +75,7 @@ ul {
 }
 
 .header-contact {
-  color: inherit;
+  color: var(--secondary-color);
 }
 
 .header-contact:hover,
@@ -88,20 +86,21 @@ ul {
 /* hero */
 .hero {
   background-color: var(--dark-background-color);
-  color: var(--dark-main-color);
 }
 
 .hero-title {
   font-weight: var(--hero-title-font-weight);
-  font-size: var(--hero-title-font-size);
+  font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+
+  color: var(--dark-main-color);
 }
 
 .hero-btn {
   font-weight: var(--bolt-font-weight);
-  font-size: var(--secondary-font-size);
+  font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
@@ -113,10 +112,11 @@ ul {
 /* features */
 .feature-title {
   font-weight: var(--bolt-font-weight);
-  font-size: var(--main-font-size);
-  letter-spacing: 0.03em;
+  font-size: 14px;
   text-transform: uppercase;
+}
 
+.text {
   color: var(--secondary-color);
 }
 
@@ -125,43 +125,34 @@ ul {
   letter-spacing: 0.03em;
 }
 
-/* types of jobs  */
+/* works */
 /* team  */
-.jobs-title,
+.works-title,
 .team-title {
   font-weight: var(--bolt-font-weight);
-  font-size: var(--section-title-font-size);
+  font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-color);
 }
 
 .team {
   background-color: var(--secondary-background-color);
 }
 
-.team-employee {
-  font-weight: var(--normal-font-weight);
-  font-size: var(--secondary-font-size);
+.team-item > .employee,
+.team-item > .profession {
+  font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-color);
 }
-.profession {
-  font-size: var(--secondary-font-size);
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+
+.employee {
+  font-weight: var(--average-font-weight);
 }
 
 /* footer */
 footer {
   background-color: var(--dark-background-color);
-  color: var(--dark-main-color);
 }
 
 .logo-footer {
@@ -173,23 +164,24 @@ footer {
 }
 .address {
   font-style: normal;
-  font-weight: var(--thin-font-weight);
-  /* font-size: 14px; */
+  font-weight: var(--main-font-weight);
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  color: var(--dark-main-color);
 }
 
 /* portfolio */
+
 /* button filtrs */
 .btn-filter {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: var(--normal-font-weight0);
-  font-size: var(--secondary-font-size);
+  font-weight: var(--average-font-weight);
+  font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--secondary-color);
+  color: var(--main-color);
   background-color: var(--secondary-background-color);
 }
 .btn-filter:hover,
@@ -201,16 +193,12 @@ footer {
 /* list portfolio */
 .portfolio-caption {
   font-weight: var(--bolt-font-weight);
-  font-size: var(--caption-portfolio-font-size);
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  color: var(--secondary-color);
 }
 
 .portfolio-text {
-  font-weight: var(--thin-font-weight);
-  font-size: var(--secondary-font-size);
+  font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
 }
